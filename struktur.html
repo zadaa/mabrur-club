@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susunan Kepengurusan & Cabang - IPHI & Mabrur.club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#141416',
+              dark: '#1C1D21',
+              card: '#23242A',
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#AA820A',
+              emerald: '#0D6843',
+              emeraldDark: '#084C30',
+              emeraldLight: '#E8F5EE',
+              surface: '#F8F9FA'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient {
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #B8860B 100%);
+    }
+  </style>
+</head>
+<body class="font-sans text-brand-dark bg-brand-surface antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-black text-white text-xs border-b border-brand-gold/30 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2 text-gray-300">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-brand-emerald text-white">STRUKTUR ORGANISASI</span>
+        <span>PP IPHI Periode 2021-2026 (Muktamar VII)</span>
+      </div>
+      <a href="index.html" class="text-brand-gold hover:underline flex items-center gap-1 text-xs font-semibold">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Kembali ke Beranda
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-gold/30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <img src="assets/logo-mabrur.webp" alt="Logo Mabrur.club" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+          <div class="border-l border-gray-300 pl-3">
+            <span class="block text-xs font-bold uppercase tracking-wider text-brand-emerald">Official Platform</span>
+            <span class="text-sm font-extrabold text-brand-black tracking-tight">IPHI INDONESIA</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="hover:text-brand-emerald transition-colors">Beranda</a>
+          <a href="profil.html" class="hover:text-brand-emerald transition-colors">Profil IPHI</a>
+          <a href="legalitas.html" class="hover:text-brand-emerald transition-colors">Legalitas Resmi</a>
+          <a href="struktur.html" class="text-brand-emerald font-bold border-b-2 border-brand-emerald pb-1">Pengurus & Cabang</a>
+          <a href="daftar.html" class="px-6 py-2.5 rounded-lg gold-gradient text-brand-black text-sm font-bold shadow-md hover:brightness-105 transition flex items-center space-x-1.5">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Daftar</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="bg-brand-black text-white py-14 border-b border-brand-gold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-gold/20 text-brand-gold border border-brand-gold/40">Komposisi & Personalia Resmi</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold mt-3">Susunan Kepengurusan Tingkat Nasional & Wilayah</h1>
+      <p class="text-gray-300 text-sm sm:text-base mt-2 max-w-3xl">
+        Berdasarkan Ketetapan Muktamar VII IPHI & SK Menkumham RI No. AHU-0000881.AH.01.08.TAHUN 2021 untuk Masa Bakti 2021-2026.
+      </p>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    
+    <!-- PENGURUS HARIAN INTI -->
+    <section class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-sm">
+      <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-gray-100">
+        <div class="w-10 h-10 rounded-xl bg-brand-black text-brand-gold flex items-center justify-center">
+          <i data-lucide="crown" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-extrabold text-brand-black">Pimpinan Pengurus Harian Pusat</h2>
+          <p class="text-xs text-gray-500">Pelaksana operasional amanat muktamar di tingkat nasional</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Ketua Umum -->
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-brand-black to-brand-dark text-white border-2 border-brand-gold/80 relative overflow-hidden shadow-lg lg:col-span-3">
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div class="w-24 h-24 rounded-full p-1 gold-gradient shrink-0 shadow-lg">
+              <img src="assets/ketum-erman-suparno.png" alt="Dr. Ir. H. Erman Suparno, MBA. M.Si" class="w-full h-full rounded-full object-cover">
+            </div>
+            <div>
+              <span class="px-3 py-0.5 rounded text-[11px] font-bold bg-brand-emerald text-white">KETUA UMUM PP IPHI</span>
+              <h3 class="text-2xl font-extrabold mt-1 text-white">Dr. Ir. H. Erman Suparno, MBA. M.Si</h3>
+              <p class="text-xs text-brand-goldLight mt-1">Menteri Tenaga Kerja & Transmigrasi RI (2005-2009) • Ketua Umum Terpilih Muktamar VII</p>
+              <p class="text-xs text-gray-300 mt-2 max-w-2xl leading-relaxed">
+                Memimpin konsolidasi nasional IPHI untuk menjaga kemabruran haji, penguatan badan usaha Koperhaji, serta transformasi digital jamaah haji melalui Mabrur.club.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sekjen -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-brand-emerald">Sekretaris Jenderal</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">Ir. H. Ahmad Bambang Irianto</h4>
+          <p class="text-xs text-gray-500 mt-1">Koordinator administrasi, tata kelola kelembagaan, dan regulasi internal PP IPHI.</p>
+        </div>
+
+        <!-- Bendum -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-brand-goldDark">Bendahara Umum</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">H. Abdul Wahid, S.H. MH</h4>
+          <p class="text-xs text-gray-500 mt-1">Pengelolaan keuangan organisasi, akuntabilitas anggaran, dan aset kebajikan IPHI.</p>
+        </div>
+
+        <!-- Waketum Dakwah -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-brand-black">Wakil Ketua Umum</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">H. Anshori, SH. MH. M.PdI</h4>
+          <p class="text-xs text-gray-500 mt-1">Bidang Dakwah & Ukhuwah Islamiyah.</p>
+        </div>
+
+        <!-- Waketum Organisasi -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-brand-black">Wakil Ketua Umum</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">H. Holil Aksan Umar Zen</h4>
+          <p class="text-xs text-gray-500 mt-1">Bidang Organisasi & Kaderisasi Anggota.</p>
+        </div>
+
+        <!-- Waketum Kelembagaan -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-brand-black">Wakil Ketua Umum</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">H. Sugeng Pujiyono, ST. SE. M.Si</h4>
+          <p class="text-xs text-gray-500 mt-1">Bidang Kelembagaan Dalam Negeri dan Luar Negeri.</p>
+        </div>
+
+        <!-- Waketum Perempuan -->
+        <div class="p-6 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700">Wakil Ketua Umum</span>
+          <h4 class="text-base font-extrabold text-brand-black mt-1">Prof. Dr. Sylviana Murni, SH. M.Si</h4>
+          <p class="text-xs text-gray-500 mt-1">Bidang Pemberdayaan dan Kesejahteraan Perempuan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEWAN KEHORMATAN & DEWAN PEMBINA -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- DEWAN KEHORMATAN -->
+      <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+        <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+          <div class="w-9 h-9 rounded-xl bg-brand-gold text-brand-black flex items-center justify-center">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-brand-black">Dewan Kehormatan</h3>
+        </div>
+        <div class="space-y-3 text-xs sm:text-sm">
+          <div class="p-3 rounded-xl bg-brand-surface font-semibold flex items-center justify-between">
+            <span class="text-brand-black">Jenderal TNI (Purn) H. TRY SUTRISNO</span>
+            <span class="text-xs text-brand-emerald font-bold">Ketua / Pendiri IPHI</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Jenderal TNI (Purn) H. DUDUNG ABDURACHMAN</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Letjen TNI (Purn) H. AM. PUTRANTO</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Dr. H. SANDIAGA UNO, BBA, MBA</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">H. GANJAR PRANOWO, SH. M.IP</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Buya BASRI BERMANDA, MBA</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Dr. Ir. H. BUDI SOESILO SOEPANDJI</span>
+            <span class="text-[11px] text-gray-500">Anggota</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEWAN PENASEHAT & PAKAR -->
+      <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+        <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+          <div class="w-9 h-9 rounded-xl bg-brand-emerald text-white flex items-center justify-center">
+            <i data-lucide="book-open" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-xl font-extrabold text-brand-black">Dewan Penasehat & Dewan Pakar</h3>
+        </div>
+        <div class="space-y-3 text-xs sm:text-sm">
+          <div class="p-3 rounded-xl bg-brand-surface font-semibold flex items-center justify-between">
+            <span class="text-brand-black">Dr. H. FADLI ZON, SS. M.Si</span>
+            <span class="text-xs text-brand-emerald font-bold">Ketua Dewan Penasehat</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Dr. Ir. H. MUHAMMAD NUH, DEA</span>
+            <span class="text-[11px] text-brand-goldDark font-bold">Koordinator Dewan Pakar</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Dr. KH. NASARUDDIN UMAR, MA</span>
+            <span class="text-[11px] text-brand-goldDark font-bold">Wakil Koordinator Pakar</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Irjen Pol (Purn) Dr. ANTON CHARLIYAN</span>
+            <span class="text-[11px] text-gray-500">Dewan Penasehat</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Dr. (Hc) H. ARY GINANJAR AGUSTIAN</span>
+            <span class="text-[11px] text-gray-500">Dewan Pembina</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Dr. H. ANGGITO ABIMANYU, M.Si</span>
+            <span class="text-[11px] text-gray-500">Dewan Pembina</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white border border-gray-200 flex items-center justify-between">
+            <span class="text-gray-800">Prof. Dr. Hj. AMANY LUBIS, MA</span>
+            <span class="text-[11px] text-gray-500">Dewan Pembina</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STRUKTUR TINGKAT WILAYAH & CABANG -->
+    <section class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-sm">
+      <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-100">
+        <div class="w-10 h-10 rounded-xl bg-brand-black text-brand-gold flex items-center justify-center">
+          <i data-lucide="map" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-2xl font-extrabold text-brand-black">Hierarki & Jangkauan Organisasi</h2>
+          <p class="text-xs text-gray-500">Tersebar di 34 Pengurus Wilayah (Provinsi) dan lebih dari 500 Pengurus Daerah</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center">
+        <div class="p-4 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-xs font-bold text-brand-goldDark">Tingkat 1</span>
+          <h4 class="text-sm font-extrabold text-brand-black mt-1">Pengurus Pusat (PP)</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Ibukota Negara (Jakarta)</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-xs font-bold text-brand-emerald">Tingkat 2</span>
+          <h4 class="text-sm font-extrabold text-brand-black mt-1">Pengurus Wilayah (PW)</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Ibukota Provinsi (34 Daerah)</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-xs font-bold text-brand-black">Tingkat 3</span>
+          <h4 class="text-sm font-extrabold text-brand-black mt-1">Pengurus Daerah (PD)</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Kabupaten & Kota Seluruh RI</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-xs font-bold text-brand-black">Tingkat 4</span>
+          <h4 class="text-sm font-extrabold text-brand-black mt-1">Pengurus Cabang (PC)</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Tingkat Kecamatan</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-surface border border-gray-200">
+          <span class="text-xs font-bold text-brand-black">Tingkat 5 & LN</span>
+          <h4 class="text-sm font-extrabold text-brand-black mt-1">Pengurus Ranting & LN</h4>
+          <p class="text-[11px] text-gray-500 mt-1">Desa/Kelurahan & Luar Negeri</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t border-gray-200 py-8 text-center text-xs text-gray-500">
+    <p>&copy; 2026 Ikatan Persaudaraan Haji Indonesia (IPHI) • Mabrur.club. Seluruh Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Anggota IPHI - Mabrur.club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#141416',
+              dark: '#1C1D21',
+              card: '#23242A',
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#AA820A',
+              emerald: '#0D6843',
+              emeraldDark: '#084C30',
+              emeraldLight: '#E8F5EE',
+              surface: '#F8F9FA'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient {
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #B8860B 100%);
+    }
+    .kta-card-gradient {
+      background: linear-gradient(135deg, #18191E 0%, #0E0F12 100%);
+    }
+  </style>
+</head>
+<body class="font-sans text-brand-dark bg-brand-surface antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-brand-black text-white text-xs border-b border-brand-gold/30 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2 text-gray-300">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-brand-emerald text-white">PENDAFTARAN RESMI</span>
+        <span>Sistem Registrasi Anggota Terpadu IPHI</span>
+      </div>
+      <a href="index.html" class="text-brand-gold hover:underline flex items-center gap-1 text-xs font-semibold">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Kembali ke Beranda
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-gold/30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <img src="assets/logo-mabrur.webp" alt="Logo Mabrur.club" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+          <div class="border-l border-gray-300 pl-3">
+            <span class="block text-xs font-bold uppercase tracking-wider text-brand-emerald">Official Platform</span>
+            <span class="text-sm font-extrabold text-brand-black tracking-tight">IPHI INDONESIA</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+          <a href="index.html" class="hover:text-brand-emerald transition-colors">Beranda</a>
+          <a href="profil.html" class="hover:text-brand-emerald transition-colors">Profil IPHI</a>
+          <a href="legalitas.html" class="hover:text-brand-emerald transition-colors">Legalitas Resmi</a>
+          <a href="struktur.html" class="hover:text-brand-emerald transition-colors">Pengurus & Cabang</a>
+          <a href="daftar.html" class="px-6 py-2.5 rounded-lg gold-gradient text-brand-black text-sm font-bold shadow-md hover:brightness-105 transition flex items-center space-x-1.5">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Daftar</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="bg-brand-black text-white py-12 border-b border-brand-gold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-gold/20 text-brand-gold border border-brand-gold/40">Keanggotaan Terpadu</span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold mt-2">Pendaftaran Anggota IPHI & KTA Digital</h1>
+          <p class="text-gray-300 text-sm mt-1">
+            Pilih cara termudah bagi Anda: unduh aplikasi <strong>Apps Mabrur.club</strong> atau isi formulir online langsung di bawah ini.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="#form-daftar" class="px-5 py-2.5 rounded-xl gold-gradient text-brand-black font-extrabold text-sm shadow">
+            Isi Form Web
+          </a>
+          <a href="#apps-download" class="px-5 py-2.5 rounded-xl border border-gray-700 hover:border-brand-gold text-white font-bold text-sm">
+            Unduh Aplikasi
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    
+    <!-- OPTION A: DOWNLOAD APPS HIGHLIGHT -->
+    <section id="apps-download" class="bg-white rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-emerald">Jalur Paling Cepat & Praktis</span>
+          <h2 class="text-2xl font-extrabold text-brand-black">Daftar Langsung via Aplikasi Apps Mabrur.club</h2>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Dengan mengunduh aplikasi resmi di ponsel, KTA Digital langsung tersimpan di dompet digital smartphone Anda, dilengkapi panduan dzikir harian, notifikasi agenda pengurus daerah, dan akses pasar syariah Koperhaji.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#" class="px-4 py-2.5 rounded-xl bg-brand-black text-white border border-brand-gold/40 flex items-center space-x-3 hover:bg-brand-dark transition">
+              <i data-lucide="play" class="w-5 h-5 text-green-400 fill-green-400"></i>
+              <div class="text-left">
+                <p class="text-[9px] text-gray-400 uppercase">Unduh di</p>
+                <p class="text-xs font-bold text-white">Google Play Store</p>
+              </div>
+            </a>
+            <a href="#" class="px-4 py-2.5 rounded-xl bg-brand-black text-white border border-brand-gold/40 flex items-center space-x-3 hover:bg-brand-dark transition">
+              <i data-lucide="apple" class="w-5 h-5 text-white"></i>
+              <div class="text-left">
+                <p class="text-[9px] text-gray-400 uppercase">Tersedia di</p>
+                <p class="text-xs font-bold text-white">Apple App Store</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 bg-brand-surface p-5 rounded-2xl border border-gray-200 text-center">
+          <div class="w-24 h-24 mx-auto bg-white p-2 rounded-xl border border-gray-300 shadow-inner flex items-center justify-center mb-2">
+            <i data-lucide="qr-code" class="w-16 h-16 text-brand-black"></i>
+          </div>
+          <p class="text-xs font-bold text-brand-black">Scan QR untuk Download</p>
+          <p class="text-[10px] text-gray-500">Otomatis mendeteksi tipe Android atau iPhone</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPTION B: REGISTRATION FORM WITH LIVE KTA GENERATOR PREVIEW -->
+    <section id="form-daftar" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- FORM INPUT COLUMN (7 cols) -->
+      <div class="lg:col-span-7 bg-white rounded-3xl p-8 border border-gray-200 shadow-sm space-y-6">
+        <div class="border-b border-gray-100 pb-4">
+          <div class="inline-flex items-center space-x-2 text-xs font-bold text-brand-emerald">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+            <span>Formulir Pendaftaran Keanggotaan</span>
+          </div>
+          <h2 class="text-2xl font-extrabold text-brand-black mt-1">Biodata Calon Anggota IPHI</h2>
+          <p class="text-xs text-gray-500 mt-1">Data akan diverifikasi oleh Pengurus Daerah (PD) sesuai alamat domisili Anda.</p>
+        </div>
+
+        <form id="membership-form" class="space-y-4">
+          <!-- Nama Lengkap -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Nama Lengkap & Gelar *</label>
+            <div class="relative">
+              <input type="text" id="input-nama" value="H. Ahmad Fauzi, M.Ag" required placeholder="Contoh: H. Ahmad Fauzi, M.Ag"
+                     class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm font-semibold text-brand-black">
+              <i data-lucide="user" class="w-4 h-4 text-gray-400 absolute right-3 top-3"></i>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- NIK / KTP -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">NIK (KTP) *</label>
+              <input type="text" id="input-nik" value="3175020199000001" required maxlength="16" placeholder="16 digit NIK"
+                     class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm font-mono text-brand-black">
+            </div>
+
+            <!-- Status Haji / Tahun -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Tahun Keberangkatan Haji *</label>
+              <select id="input-tahun" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm font-semibold text-brand-black">
+                <option value="Haji Tahun 2024">Haji Tahun 2024 (1445 H)</option>
+                <option value="Haji Tahun 2023">Haji Tahun 2023 (1444 H)</option>
+                <option value="Haji Tahun 2022">Haji Tahun 2022 (1443 H)</option>
+                <option value="Haji Tahun 2019">Haji Tahun 2019 (1440 H)</option>
+                <option value="Haji Tahun 2018" selected>Haji Tahun 2018 (1439 H)</option>
+                <option value="Haji Tahun 2015">Haji Tahun 2015</option>
+                <option value="Haji Tahun 2010 ke Bawah">Haji Tahun 2010 ke Bawah</option>
+                <option value="Calon Jamaah (Pra-Haji)">Calon Jamaah (Pra-Haji Binaan)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Pengurus Daerah (Kab/Kota) -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Pengurus Daerah (Kabupaten / Kota) *</label>
+            <div class="relative">
+              <input type="text" id="input-daerah" value="Jakarta Timur" required placeholder="Contoh: Jakarta Timur / Surabaya / Medan"
+                     class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm font-semibold text-brand-black">
+              <i data-lucide="building-2" class="w-4 h-4 text-gray-400 absolute right-3 top-3"></i>
+            </div>
+            <p class="text-[11px] text-gray-500 mt-1">Pengurus Daerah (PD) tingkat Kabupaten/Kota yang memverifikasi berkas dan menerbitkan KTA Anda.</p>
+          </div>
+
+          <!-- Alamat Lengkap Domisili -->
+          <div>
+            <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Alamat Lengkap Domisili (Sesuai KTP) *</label>
+            <div class="relative">
+              <textarea id="input-alamat" rows="2" required placeholder="Jl. Nama Jalan No. XX, RT 001 / RW 002, Kelurahan, Kecamatan"
+                        class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm font-semibold text-brand-black leading-relaxed">Jl. Tegalan No. 1, RT 001/RW 003, Kel. Palmeriam, Kec. Matraman</textarea>
+              <i data-lucide="map-pin" class="w-4 h-4 text-gray-400 absolute right-3 top-3"></i>
+            </div>
+            <p class="text-[11px] text-gray-500 mt-1">Data alamat lengkap digunakan untuk penempatan ke Pengurus Cabang (Kecamatan) dan pengiriman KTA fisik.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- No HP / WA -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Nomor WhatsApp Aktif *</label>
+              <input type="tel" id="input-hp" value="081298765432" required placeholder="08xxxxxxxxxx"
+                     class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm text-brand-black">
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Alamat Email</label>
+              <input type="email" id="input-email" value="fauzi@example.com" placeholder="email@anda.com"
+                     class="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold text-sm text-brand-black">
+            </div>
+          </div>
+
+          <!-- Persetujuan -->
+          <div class="pt-3 border-t border-gray-100 flex items-start space-x-3">
+            <input type="checkbox" id="agree" checked required class="mt-1 h-4 w-4 rounded border-gray-300 text-brand-emerald focus:ring-brand-emerald">
+            <label for="agree" class="text-xs text-gray-600 leading-tight">
+              Saya bersedia mematuhi Anggaran Dasar & Rumah Tangga (AD/ART) IPHI serta berkomitmen menjaga keluhuran nama baik organisasi dan kemabruran haji sepanjang hayat.
+            </label>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-3">
+            <button type="submit" class="w-full py-3.5 px-6 rounded-xl gold-gradient text-brand-black font-extrabold text-sm shadow-md hover:brightness-105 transition flex items-center justify-center space-x-2">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              <span>Kirim Pendaftaran & Verifikasi KTA</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- LIVE KTA PREVIEW COLUMN (5 cols) -->
+      <div class="lg:col-span-5 space-y-4 sticky top-28">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-black flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-ping"></span>
+            Pratinjau KTA Digital Langsung
+          </span>
+          <span class="text-[11px] text-gray-500 font-mono">Format Kartu Nasional</span>
+        </div>
+
+        <!-- THE PHYSICAL / DIGITAL CARD -->
+        <div id="kta-card" class="kta-card-gradient text-white rounded-2xl p-6 border-2 border-brand-gold/70 shadow-2xl relative overflow-hidden">
+          <!-- Background Accents -->
+          <div class="absolute -right-12 -bottom-12 w-40 h-40 bg-brand-gold/15 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="absolute top-0 right-0 w-24 h-24 bg-brand-emerald/20 rounded-full blur-2xl pointer-events-none"></div>
+
+          <!-- Card Header -->
+          <div class="flex justify-between items-start pb-4 border-b border-gray-800">
+            <div class="flex items-center space-x-2">
+              <img src="assets/logo-mabrur.webp" alt="Mabrur Logo" class="w-10 h-10 object-contain rounded-full border border-brand-gold/50">
+              <div>
+                <p class="text-[8px] uppercase tracking-widest text-brand-gold font-bold">KARTU TANDA ANGGOTA</p>
+                <h4 class="text-xs font-black tracking-tight text-white">IKATAN PERSAUDARAAN HAJI INDONESIA</h4>
+                <p class="text-[8px] text-gray-400">SK Menkumham No. AHU-0000881.AH.01.08.2021</p>
+              </div>
+            </div>
+            <div class="w-7 h-7 rounded-full bg-brand-gold/20 border border-brand-gold flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="my-5 flex items-center space-x-4">
+            <!-- Photo Avatar -->
+            <div class="w-16 h-20 bg-gray-800 border-2 border-brand-gold/60 rounded-xl overflow-hidden flex flex-col items-center justify-center shrink-0 text-center p-1">
+              <i data-lucide="user" class="w-8 h-8 text-brand-gold mb-1"></i>
+              <span class="text-[8px] text-gray-400 font-bold uppercase">PASFOTO</span>
+            </div>
+
+            <!-- Member Details -->
+            <div class="space-y-1 overflow-hidden">
+              <p id="card-name" class="text-sm font-extrabold text-brand-goldLight truncate">H. Ahmad Fauzi, M.Ag</p>
+              <p id="card-id" class="text-[10px] font-mono text-gray-300">NO. KTA: <span class="text-white font-bold">IPHI-2024-00821</span></p>
+              <p id="card-nik" class="text-[9px] text-gray-400 font-mono">NIK: 3175020199000001</p>
+              <p id="card-alamat" class="text-[8px] text-gray-400 truncate max-w-[210px] flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-2.5 h-2.5 text-brand-gold shrink-0"></i>
+                <span>Jl. Tegalan No. 1, Matraman</span>
+              </p>
+              <div class="pt-1 flex flex-wrap gap-1">
+                <span id="card-tahun" class="px-2 py-0.5 rounded text-[8px] font-bold bg-brand-emerald text-white">Haji Tahun 2018</span>
+                <span id="card-daerah" class="px-2 py-0.5 rounded text-[8px] font-bold bg-gray-800 text-brand-goldLight border border-gray-700">PD JAKARTA TIMUR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Footer (Barcode & Motto) -->
+          <div class="pt-3 border-t border-gray-800 flex justify-between items-center">
+            <div>
+              <p class="text-[7px] text-brand-gold uppercase tracking-wider font-extrabold">Haji Mabrur Sepanjang Hayat</p>
+              <!-- Simulated Barcode Lines -->
+              <div class="mt-1 flex space-x-[2px] h-5 items-end opacity-70">
+                <div class="w-[2px] h-full bg-white"></div>
+                <div class="w-[1px] h-full bg-white"></div>
+                <div class="w-[3px] h-full bg-white"></div>
+                <div class="w-[1px] h-full bg-white"></div>
+                <div class="w-[2px] h-full bg-white"></div>
+                <div class="w-[4px] h-full bg-white"></div>
+                <div class="w-[1px] h-full bg-white"></div>
+                <div class="w-[3px] h-full bg-white"></div>
+                <div class="w-[2px] h-full bg-white"></div>
+                <div class="w-[1px] h-full bg-white"></div>
+                <div class="w-[3px] h-full bg-white"></div>
+                <div class="w-[1px] h-full bg-white"></div>
+              </div>
+            </div>
+
+            <!-- Mini QR -->
+            <div class="w-10 h-10 bg-white p-1 rounded-lg flex items-center justify-center">
+              <i data-lucide="qr-code" class="w-8 h-8 text-black"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl border border-gray-200 text-xs text-gray-600 space-y-1">
+          <p class="font-bold text-brand-black flex items-center gap-1.5">
+            <i data-lucide="info" class="w-4 h-4 text-brand-emerald"></i>
+            Keterangan KTA Digital:
+          </p>
+          <p>Setelah formulir dikirim, nomor registrasi sementara akan diterbitkan. KTA digital penuh akan aktif di aplikasi <strong>Apps Mabrur.club</strong> pasca validasi Pengurus Daerah.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- SUCCESS MODAL (Hidden by default) -->
+  <div id="success-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl p-8 max-w-md w-full border-2 border-brand-gold text-center space-y-4 shadow-2xl animate-fade-in">
+      <div class="w-16 h-16 rounded-full bg-green-100 text-brand-emerald mx-auto flex items-center justify-center">
+        <i data-lucide="check-circle" class="w-10 h-10"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-brand-black">Pendaftaran Berhasil Dikirim!</h3>
+      <p class="text-xs text-gray-600 leading-relaxed">
+        Alhamdulillah, data pendaftaran keanggotaan IPHI Anda telah tersimpan dengan Nomor Registrasi:
+      </p>
+      <div class="p-3 bg-brand-surface rounded-xl border border-gray-300 font-mono font-extrabold text-base text-brand-black">
+        REG-IPHI-2026-9941
+      </div>
+      <p class="text-xs text-gray-500">
+        Silakan unduh aplikasi <strong>Apps Mabrur.club</strong> di smartphone Anda untuk login dan memantau status validasi KTA resmi Anda.
+      </p>
+      <div class="pt-2 flex flex-col gap-2">
+        <button id="close-modal" class="w-full py-3 rounded-xl gold-gradient text-brand-black font-extrabold text-sm shadow hover:brightness-105">
+          Tutup & Kembali ke Beranda
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-white border-t border-gray-200 py-8 text-center text-xs text-gray-500 mt-16">
+    <p>&copy; 2026 Ikatan Persaudaraan Haji Indonesia (IPHI) • Mabrur.club. Seluruh Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // LIVE INTERACTION: Form Inputs to Digital KTA Card
+    const inputNama = document.getElementById('input-nama');
+    const inputNik = document.getElementById('input-nik');
+    const inputAlamat = document.getElementById('input-alamat');
+    const inputTahun = document.getElementById('input-tahun');
+    const inputDaerah = document.getElementById('input-daerah');
+
+    const cardName = document.getElementById('card-name');
+    const cardNik = document.getElementById('card-nik');
+    const cardAlamat = document.getElementById('card-alamat');
+    const cardTahun = document.getElementById('card-tahun');
+    const cardDaerah = document.getElementById('card-daerah');
+
+    inputNama.addEventListener('input', (e) => {
+      cardName.textContent = e.target.value.trim() || 'H. Nama Anggota';
+    });
+
+    inputNik.addEventListener('input', (e) => {
+      cardNik.textContent = 'NIK: ' + (e.target.value.trim() || '3175000000000000');
+    });
+
+    inputAlamat.addEventListener('input', (e) => {
+      cardAlamat.querySelector('span').textContent = e.target.value.trim() || 'Alamat Domisili Anggota';
+    });
+
+    inputTahun.addEventListener('change', (e) => {
+      cardTahun.textContent = e.target.value;
+    });
+
+    inputDaerah.addEventListener('input', (e) => {
+      const val = e.target.value.trim();
+      cardDaerah.textContent = val ? ('PD ' + val.toUpperCase()) : 'PD KAB/KOTA';
+    });
+
+    // Handle Form Submit
+    const form = document.getElementById('membership-form');
+    const modal = document.getElementById('success-modal');
+    const closeModal = document.getElementById('close-modal');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      modal.classList.remove('hidden');
+      lucide.createIcons();
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

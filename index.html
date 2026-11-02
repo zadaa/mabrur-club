@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabrur.club - Amanat IPHI (Ikatan Persaudaraan Haji Indonesia)</title>
+  <meta name="description" content="Platform resmi Mabrur.club - Wadah digital silaturahmi, pembinaan haji mabrur sepanjang hayat, dan keanggotaan Ikatan Persaudaraan Haji Indonesia (IPHI).">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#141416',
+              dark: '#1C1D21',
+              card: '#23242A',
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              goldDark: '#AA820A',
+              emerald: '#0D6843',
+              emeraldDark: '#084C30',
+              emeraldLight: '#E8F5EE',
+              surface: '#F8F9FA'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Cinzel"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gold-gradient {
+      background: linear-gradient(135deg, #ECC868 0%, #D4AF37 50%, #B8860B 100%);
+    }
+    .gold-text-gradient {
+      background: linear-gradient(135deg, #E5B842 0%, #D4AF37 50%, #996515 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .dark-card-gradient {
+      background: linear-gradient(180deg, #1A1B20 0%, #121316 100%);
+    }
+    .gold-border-glow {
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.18);
+    }
+  </style>
+</head>
+<body class="font-sans text-brand-dark bg-white antialiased selection:bg-brand-gold selection:text-brand-black">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-black text-white text-xs border-b border-brand-gold/30 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-2 text-gray-300">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-brand-emerald text-white">RESMI IPHI</span>
+        <span>Amanat Pengurus Pusat Ikatan Persaudaraan Haji Indonesia (AHU-0000881.AH.01.08.2021)</span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:085880800000" class="flex items-center hover:text-brand-gold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 mr-1.5 text-brand-gold"></i>
+          <span>0858-8080-0000</span>
+        </a>
+        <a href="mailto:sekretariat@iphi.or.id" class="flex items-center hover:text-brand-gold transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 mr-1.5 text-brand-gold"></i>
+          <span>sekretariat@iphi.or.id</span>
+        </a>
+        <span class="text-brand-gold font-medium hidden lg:inline">"Haji Mabrur Sepanjang Hayat"</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER (NAVBAR) -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-gold/30 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- BRAND LOGOS -->
+        <div class="flex items-center space-x-4">
+          <a href="index.html" class="flex items-center space-x-3 group">
+            <img src="assets/logo-mabrur.webp" alt="Logo Mabrur.club" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+            <div class="border-l border-gray-300 pl-3">
+              <span class="block text-xs font-bold uppercase tracking-wider text-brand-emerald">Official Platform</span>
+              <span class="text-sm font-extrabold text-brand-black tracking-tight">IPHI INDONESIA</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-700">
+          <a href="#beranda" class="text-brand-emerald hover:text-brand-gold transition-colors font-bold">Beranda</a>
+          <a href="profil.html" class="hover:text-brand-emerald transition-colors">Profil IPHI</a>
+          <a href="#kegiatan" class="hover:text-brand-emerald transition-colors">Kegiatan & Umat</a>
+          <a href="legalitas.html" class="hover:text-brand-emerald transition-colors">Legalitas Resmi</a>
+          <a href="struktur.html" class="hover:text-brand-emerald transition-colors">Pengurus & Cabang</a>
+          <a href="#apps" class="hover:text-brand-emerald transition-colors flex items-center gap-1.5">
+            <span>Apps</span>
+            <span class="px-1.5 py-0.5 text-[10px] bg-brand-gold/20 text-brand-black border border-brand-gold/40 rounded-full">Baru</span>
+          </a>
+        </nav>
+
+        <!-- CTA BUTTON -->
+        <div class="hidden lg:flex items-center">
+          <a href="daftar.html" class="px-6 py-2.5 rounded-lg gold-gradient text-brand-black text-sm font-bold shadow-md hover:shadow-lg hover:brightness-105 transition-all flex items-center space-x-2">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Daftar</span>
+          </a>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-md text-gray-700 hover:text-brand-black hover:bg-gray-100">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE DROPDOWN -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-gray-200 bg-white px-4 pt-2 pb-6 space-y-3">
+      <a href="#beranda" class="block py-2 text-base font-semibold text-brand-emerald">Beranda</a>
+      <a href="profil.html" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-emerald">Profil IPHI Lengkap</a>
+      <a href="#kegiatan" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-emerald">Kegiatan & Umat</a>
+      <a href="legalitas.html" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-emerald">Legalitas Resmi Hukum</a>
+      <a href="struktur.html" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-emerald">Kepengurusan & Cabang</a>
+      <a href="#apps" class="block py-2 text-base font-medium text-gray-700 hover:text-brand-emerald">Aplikasi Mobile Mabrur.club</a>
+      <div class="pt-4 border-t border-gray-100">
+        <a href="daftar.html" class="block w-full text-center py-2.5 rounded-lg gold-gradient font-bold text-sm text-brand-black shadow">Daftar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER HALAMAN BERANDA (HERO BANNER) WITH BLURRED KA'BAH BACKGROUND -->
+  <section id="beranda" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 min-h-[640px] flex items-center">
+    
+    <!-- BACKGROUND KA'BAH DENGAN EFEK BLUR -->
+    <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+      <!-- Panoramic Ka'bah Image with Soft Blur Effect -->
+      <img src="assets/bg-kabah.jpg" alt="Ka'bah Masjidil Haram" 
+           class="w-full h-full object-cover object-[center_35%] filter blur-[5px] scale-105 brightness-[0.92] contrast-[1.05]">
+      
+      <!-- Elegant White & Light Glass Overlay (No dots pattern) -->
+      <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/88 to-white/72"></div>
+      
+      <!-- Smooth Bottom Fade into Content -->
+      <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+      
+      <!-- Subtle Warm Gold Ambient Glow -->
+      <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- LEFT: INTRO TEXT & CTA -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-gold/15 border border-brand-gold/40 text-brand-black text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+            <span>Amanat Resmi Ikatan Persaudaraan Haji Indonesia (IPHI)</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-black leading-tight">
+            Merajut Ukhuwah, <br>
+            <span class="gold-text-gradient">Melestarikan Kemabruran</span> <br>
+            Sepanjang Hayat.
+          </h1>
+
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Selamat datang di <strong>Mabrur.club</strong>, ekosistem digital resmi IPHI yang menghubungkan jutaan alumni haji di seluruh Indonesia. Wadah silaturahmi, layanan keanggotaan KTA, pembinaan ibadah, dan kemandirian ekonomi syariah.
+          </p>
+
+          <!-- DUAL CTA BUTTONS -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="daftar.html" class="w-full sm:w-auto px-7 py-3.5 rounded-xl gold-gradient text-brand-black font-extrabold text-base shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center space-x-3">
+              <i data-lucide="id-card" class="w-5 h-5"></i>
+              <span>Daftar Anggota IPHI</span>
+            </a>
+            <a href="#apps" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-black text-white font-bold text-base hover:bg-brand-dark hover:border-brand-gold border border-brand-black transition-all flex items-center justify-center space-x-3">
+              <i data-lucide="smartphone" class="w-5 h-5 text-brand-gold"></i>
+              <span>Download Apps Mabrur</span>
+            </a>
+          </div>
+
+          <!-- TRUST BADGES -->
+          <div class="pt-6 border-t border-gray-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <p class="text-2xl font-extrabold text-brand-black">34+</p>
+              <p class="text-xs text-gray-500 font-medium">Pengurus Wilayah</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-brand-black">500+</p>
+              <p class="text-xs text-gray-500 font-medium">Kabupaten & Kota</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-brand-emerald">1990</p>
+              <p class="text-xs text-gray-500 font-medium">Sejarah Berdiri</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: INTERACTIVE APP PREVIEW & KTA TEASER -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <!-- Ambient Ring Glow -->
+          <div class="relative w-full max-w-md">
+            
+            <!-- PHONE FRAME MOCKUP -->
+            <div class="relative mx-auto border-[10px] border-brand-black rounded-[42px] h-[580px] w-[295px] sm:w-[320px] shadow-2xl bg-brand-black overflow-hidden gold-border-glow">
+              <!-- Speaker & Camera notch -->
+              <div class="w-36 h-4 bg-brand-black absolute top-0 left-1/2 -translate-x-1/2 rounded-b-xl z-20 flex justify-center items-center">
+                <div class="w-10 h-1 bg-gray-700 rounded-full"></div>
+              </div>
+
+              <!-- APP SCREEN CONTENT -->
+              <div class="h-full w-full bg-gray-900 text-white flex flex-col justify-between overflow-y-auto pt-6 px-4 pb-4">
+                
+                <!-- App Top Bar -->
+                <div class="flex items-center justify-between border-b border-gray-800 pb-3">
+                  <div class="flex items-center space-x-2">
+                    <img src="assets/logo-mabrur.webp" alt="App Icon" class="w-8 h-8 rounded-full border border-brand-gold">
+                    <div>
+                      <h4 class="text-xs font-bold text-white tracking-wider">MABRUR.CLUB</h4>
+                      <p class="text-[9px] text-brand-gold">Persaudaraan Haji Indonesia</p>
+                    </div>
+                  </div>
+                  <span class="px-2 py-0.5 rounded-full text-[9px] bg-brand-emerald/30 text-green-300 border border-green-500/30">Terverifikasi</span>
+                </div>
+
+                <!-- Digital KTA Card Preview inside App -->
+                <div class="my-4 rounded-xl p-4 bg-gradient-to-tr from-brand-black via-gray-900 to-gray-800 border border-brand-gold/60 relative overflow-hidden shadow-lg">
+                  <div class="absolute top-0 right-0 -mr-6 -mt-6 w-24 h-24 bg-brand-gold/20 rounded-full blur-lg"></div>
+                  
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <p class="text-[9px] text-gray-400 uppercase tracking-wider">KARTU TANDA ANGGOTA</p>
+                      <h3 class="text-sm font-extrabold text-white">IKATAN PERSAUDARAAN HAJI</h3>
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-brand-gold/20 flex items-center justify-center border border-brand-gold">
+                      <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+                    </div>
+                  </div>
+
+                  <div class="mt-4 flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-lg bg-gray-700 border border-brand-gold/40 flex items-center justify-center text-xs text-gray-300 font-bold">
+                      FOTO
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold text-brand-goldLight">H. AHMAD FAUZI, M.Ag</p>
+                      <p class="text-[10px] text-gray-300">ID: IPHI-2024-08921</p>
+                      <p class="text-[9px] text-green-400">PW DKI Jakarta • Haji 2018</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-3 pt-2 border-t border-gray-700/60 flex justify-between items-center text-[8px] text-gray-400">
+                    <span>Mabrur Sepanjang Hayat</span>
+                    <span class="text-brand-gold font-mono font-bold">VERIFIED MEMBER</span>
+                  </div>
+                </div>
+
+                <!-- App Feature Grid -->
+                <div class="grid grid-cols-4 gap-2 text-center text-[10px] py-1">
+                  <div class="bg-gray-800/80 p-2 rounded-lg border border-gray-700/60 flex flex-col items-center">
+                    <i data-lucide="book-open" class="w-4 h-4 text-brand-gold mb-1"></i>
+                    <span class="scale-90">Manasik</span>
+                  </div>
+                  <div class="bg-gray-800/80 p-2 rounded-lg border border-gray-700/60 flex flex-col items-center">
+                    <i data-lucide="compass" class="w-4 h-4 text-brand-gold mb-1"></i>
+                    <span class="scale-90">Dzikir</span>
+                  </div>
+                  <div class="bg-gray-800/80 p-2 rounded-lg border border-gray-700/60 flex flex-col items-center">
+                    <i data-lucide="shopping-bag" class="w-4 h-4 text-brand-gold mb-1"></i>
+                    <span class="scale-90">Koperhaji</span>
+                  </div>
+                  <div class="bg-gray-800/80 p-2 rounded-lg border border-gray-700/60 flex flex-col items-center">
+                    <i data-lucide="users" class="w-4 h-4 text-brand-gold mb-1"></i>
+                    <span class="scale-90">Forum</span>
+                  </div>
+                </div>
+
+                <!-- Bottom Bar inside phone -->
+                <div class="mt-3 bg-brand-emerald/90 text-white text-[11px] font-bold py-2 rounded-lg text-center shadow">
+                  Aplikasi Siap Diunduh
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="absolute -bottom-6 -left-6 bg-white border border-gray-200 shadow-xl rounded-2xl p-3.5 flex items-center space-x-3 z-30">
+              <div class="w-10 h-10 rounded-xl bg-brand-emeraldLight flex items-center justify-center text-brand-emerald">
+                <i data-lucide="check-circle" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-black">Legalitas SK Menkumham</p>
+                <p class="text-[11px] text-gray-500">AHU-0000881 Terdaftar</p>
+              </div>
+            </div>
+
+            <div class="absolute -top-4 -right-4 bg-brand-black border border-brand-gold/60 text-white shadow-xl rounded-2xl p-3 flex items-center space-x-2 z-30">
+              <i data-lucide="award" class="w-5 h-5 text-brand-gold"></i>
+              <span class="text-xs font-bold text-brand-goldLight">Haji Mabrur Sepanjang Hayat</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ACCESS STRIP -->
+  <section class="border-y border-gray-100 bg-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <a href="profil.html" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-brand-surface transition group">
+          <div class="w-12 h-12 rounded-lg bg-brand-black text-brand-gold flex items-center justify-center group-hover:scale-105 transition-transform">
+            <i data-lucide="landmark" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-brand-black group-hover:text-brand-emerald transition-colors">Profil Lengkap</h4>
+            <p class="text-xs text-gray-500">Sejarah & Visi Misi IPHI</p>
+          </div>
+        </a>
+
+        <a href="legalitas.html" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-brand-surface transition group">
+          <div class="w-12 h-12 rounded-lg bg-brand-emerald text-white flex items-center justify-center group-hover:scale-105 transition-transform">
+            <i data-lucide="file-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-brand-black group-hover:text-brand-emerald transition-colors">Legalitas Resmi</h4>
+            <p class="text-xs text-gray-500">SK AHU & Putusan MA</p>
+          </div>
+        </a>
+
+        <a href="struktur.html" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-brand-surface transition group">
+          <div class="w-12 h-12 rounded-lg bg-brand-gold text-brand-black flex items-center justify-center group-hover:scale-105 transition-transform">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-brand-black group-hover:text-brand-emerald transition-colors">Kepengurusan</h4>
+            <p class="text-xs text-gray-500">PP IPHI & Tokoh Bangsa</p>
+          </div>
+        </a>
+
+        <a href="daftar.html" class="flex items-center space-x-3 p-3 rounded-xl hover:bg-brand-surface transition group">
+          <div class="w-12 h-12 rounded-lg bg-gray-900 text-brand-goldLight flex items-center justify-center group-hover:scale-105 transition-transform">
+            <i data-lucide="credit-card" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-brand-black group-hover:text-brand-emerald transition-colors">KTA & Anggota</h4>
+            <p class="text-xs text-gray-500">Pendaftaran Online</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHT: KETUA UMUM & AMANAT IPHI -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-brand-black via-brand-dark to-brand-black rounded-3xl p-8 sm:p-12 text-white relative overflow-hidden border border-brand-gold/40 shadow-xl">
+        <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-4 text-center">
+            <div class="relative inline-block">
+              <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-full p-1.5 gold-gradient mx-auto shadow-2xl">
+                <img src="assets/ketum-erman-suparno.png" alt="Dr. Ir. H. Erman Suparno, MBA. M.Si - Ketua Umum IPHI" class="w-full h-full rounded-full object-cover shadow-inner">
+              </div>
+              <span class="absolute bottom-1 left-1/2 -translate-x-1/2 bg-brand-emerald text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md whitespace-nowrap">
+                Masa Bakti 2021-2026
+              </span>
+            </div>
+            <h3 class="mt-4 text-lg font-extrabold text-white">Dr. Ir. H. Erman Suparno, MBA. M.Si</h3>
+            <p class="text-xs text-brand-gold font-medium">Ketua Umum Pengurus Pusat IPHI</p>
+          </div>
+
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center space-x-2 text-brand-gold text-xs font-semibold">
+              <i data-lucide="quote" class="w-4 h-4"></i>
+              <span>Amanat Pelestarian Kemabruran Haji</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-snug">
+              "Menjadikan Alumni Haji Pilar Teladan, Pemersatu Umat, dan Penggerak Kemajuan Bangsa"
+            </h2>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+              IPHI didirikan pada 24 Sya'ban 1410 H (22 Maret 1990) sebagai wadah permanen menghimpun potensi para hujjaj dari seluruh pelosok Nusantara. Lewat platform digital <strong>Mabrur.club</strong>, kita satukan langkah menjaga kemabruran haji sepanjang masa melalui pembinaan ibadah, kepedulian sosial, dan kebangkitan ekonomi syariah.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-4">
+              <a href="profil.html" class="px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-semibold transition flex items-center space-x-2">
+                <span>Baca Profil & Sejarah</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 text-brand-gold"></i>
+              </a>
+              <a href="legalitas.html" class="px-5 py-2.5 rounded-lg border border-brand-gold/60 text-brand-gold text-sm font-semibold hover:bg-brand-gold/10 transition flex items-center space-x-2">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                <span>Lihat Legalitas AHU & MA</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: KEGIATAN & KONTRIBUSI KEUMATAN -->
+  <section id="kegiatan" class="py-20 bg-brand-surface border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-emerald bg-brand-emeraldLight px-3 py-1 rounded-full">Amaliah Nyata</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black mt-3">
+          Kegiatan & Kontribusi Keumatan IPHI
+        </h2>
+        <p class="text-gray-600 mt-3 text-sm sm:text-base">
+          IPHI hadir tidak hanya sebagai simbol persaudaraan, namun bergerak aktif dalam bidang sosial, kesehatan, pendidikan, dan ekonomi demi kemaslahatan masyarakat luas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: RUMAH SAKIT HAJI -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-brand-emerald text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">Rumah Sakit Haji Indonesia</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Anggota Badan Pendiri Pembangunan Rumah Sakit Haji di 4 embarkasi utama (Jakarta, Makassar, Medan, Surabaya) untuk pelayanan medis umat dan jamaah.
+          </p>
+          <span class="text-xs font-semibold text-brand-emerald flex items-center gap-1">
+            <span>Pelayanan Kesehatan Umat</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+        <!-- CARD 2: KOPERASI SYARIAH (KOPERHAJI) -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-brand-black text-brand-gold flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="coins" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">Koperasi Syariah (KOPERHAJI)</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Menggerakkan unit usaha produktif, penguatan UMKM alumni haji, serta integrasi pembiayaan syariah berbasis persaudaraan haji yang mandiri.
+          </p>
+          <span class="text-xs font-semibold text-brand-goldDark flex items-center gap-1">
+            <span>Ekonomi Syariah Mandiri</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+        <!-- CARD 3: MAJELIS DZIKIR & MANASIK -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-brand-gold text-brand-black flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">Majelis Dzikir Nurul Hidayah</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Penyelenggaraan dzikir rutin, taklim, bimbingan manasik pra-haji dan pasca-haji sebagai sarana penguatan ruhiyah dan istiqomah ibadah.
+          </p>
+          <span class="text-xs font-semibold text-brand-black flex items-center gap-1">
+            <span>Pembinaan Rohani & Dakwah</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+        <!-- CARD 4: MAJLIS TAKLIM PEREMPUAN (MTP) -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-purple-900 text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="users-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">Majlis Taklim Perempuan (MTP)</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Wadah pemberdayaan hajjah muslimah Indonesia, membangun ketahanan keluarga sakinah, serta program sosial kemasyarakatan perempuan.
+          </p>
+          <span class="text-xs font-semibold text-purple-800 flex items-center gap-1">
+            <span>Pemberdayaan Wanita</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+        <!-- CARD 5: ANGKATAN MUDA HAJI INDONESIA (AMHI) -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="flag" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">Angkatan Muda Haji (AMHI)</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Regenerasi kepemimpinan Islam muda, mengawal nilai kemabruran di kalangan pemuda, serta inovasi kepeloporan digital generasi muda hujjaj.
+          </p>
+          <span class="text-xs font-semibold text-blue-800 flex items-center gap-1">
+            <span>Kepemimpinan Pemuda</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+        <!-- CARD 6: LAZIS & AKSI SOSIAL -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md transition group">
+          <div class="w-12 h-12 rounded-xl bg-brand-emeraldDark text-white flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <i data-lucide="hand-heart" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-brand-black mb-2">LAZIS & IPHI Peduli Sosial</h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Pengelolaan Zakat, Infaq, Shadaqah terpercaya, aksi tanggap bencana, penghijauan lahan kritis, dan santunan yatim dhuafa secara nasional.
+          </p>
+          <span class="text-xs font-semibold text-brand-emerald flex items-center gap-1">
+            <span>Filantropi & Kepedulian</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: APPS MABRUR.CLUB SHOWCASE -->
+  <section id="apps" class="py-20 bg-brand-black text-white relative overflow-hidden">
+    <!-- Visual background accent -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-gold/20 text-brand-goldLight text-xs font-bold border border-brand-gold/40">
+            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+            <span>APLIKASI RESMI MABRUR.CLUB</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            Semua Layanan IPHI Kini Dalam Genggaman Anda.
+          </h2>
+
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Aplikasi <strong>Apps Mabrur.club</strong> menghubungkan jamaah dengan seluruh ekosistem persaudaraan haji Indonesia. Akses KTA digital, informasi kegiatan daerah, kajian, hingga jejaring usaha bersama.
+          </p>
+
+          <!-- KEY APP FEATURES LIST -->
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start space-x-3">
+              <div class="w-7 h-7 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Kartu Tanda Anggota (KTA) Digital Resmi</h4>
+                <p class="text-xs text-gray-400">Identitas resmi anggota IPHI dengan barcode verifikasi nasional.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <div class="w-7 h-7 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Panduan Dzikir & Pengingat Ibadah Harian</h4>
+                <p class="text-xs text-gray-400">Doa-doa mabrur, jadwal sholat akurat, dan agenda taklim Nurul Hidayah.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3">
+              <div class="w-7 h-7 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">Direktori & Marketplace Komunitas Haji</h4>
+                <p class="text-xs text-gray-400">Promosikan usaha Anda dan dukung produk sesama hujjaj melalui Koperhaji.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOWNLOAD APP BUTTONS -->
+          <div class="pt-6 flex flex-wrap gap-4">
+            <!-- Google Play Store Button -->
+            <a href="daftar.html" class="px-5 py-3 rounded-xl bg-gray-900 border border-gray-700 hover:border-brand-gold flex items-center space-x-3 transition group">
+              <i data-lucide="play" class="w-7 h-7 text-green-400 fill-green-400"></i>
+              <div class="text-left">
+                <p class="text-[10px] text-gray-400 uppercase tracking-wider">Tersedia di</p>
+                <p class="text-sm font-bold text-white group-hover:text-brand-gold">Google Play</p>
+              </div>
+            </a>
+
+            <!-- Apple App Store Button -->
+            <a href="daftar.html" class="px-5 py-3 rounded-xl bg-gray-900 border border-gray-700 hover:border-brand-gold flex items-center space-x-3 transition group">
+              <i data-lucide="apple" class="w-7 h-7 text-white"></i>
+              <div class="text-left">
+                <p class="text-[10px] text-gray-400 uppercase tracking-wider">Unduh di</p>
+                <p class="text-sm font-bold text-white group-hover:text-brand-gold">App Store</p>
+              </div>
+            </a>
+          </div>
+
+          <p class="text-xs text-gray-400 italic">
+            *Dapat juga diakses langsung melalui formulir pendaftaran website bila Anda belum mengunduh aplikasi.
+          </p>
+        </div>
+
+        <!-- APP INTERACTION CARD -->
+        <div class="lg:col-span-6 flex justify-center">
+          <div class="w-full max-w-md bg-gradient-to-b from-gray-900 to-black p-8 rounded-3xl border border-brand-gold/50 shadow-2xl relative">
+            <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-800">
+              <img src="assets/logo-mabrur.webp" alt="Mabrur Logo" class="w-12 h-12">
+              <div>
+                <h3 class="text-base font-extrabold text-white">MABRUR.CLUB APPS</h3>
+                <p class="text-xs text-brand-gold">Versi 2.4 • Kompatibel Android & iOS</p>
+              </div>
+            </div>
+
+            <!-- Quick Download Box -->
+            <div class="bg-gray-800/80 rounded-2xl p-5 border border-gray-700 mb-6 text-center">
+              <div class="w-32 h-32 mx-auto bg-white rounded-xl p-2 flex items-center justify-center mb-3">
+                <!-- QR Code placeholder -->
+                <div class="w-full h-full border-4 border-brand-black flex flex-col items-center justify-center p-2 text-center">
+                  <i data-lucide="qr-code" class="w-16 h-16 text-brand-black"></i>
+                  <span class="text-[8px] font-bold text-brand-black mt-1">SCAN UNTUK DOWNLOAD</span>
+                </div>
+              </div>
+              <p class="text-xs font-semibold text-gray-200">Arahkan kamera ponsel Anda untuk mengunduh langsung</p>
+            </div>
+
+            <div class="text-center">
+              <a href="daftar.html" class="inline-flex items-center justify-center w-full py-3 px-4 rounded-xl gold-gradient text-brand-black font-extrabold text-sm hover:brightness-105 transition shadow-lg">
+                <i data-lucide="edit-3" class="w-4 h-4 mr-2"></i>
+                Isi Formulir Keanggotaan di Web
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: CARA MENJADI ANGGOTA IPHI -->
+  <section id="keanggotaan" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-brand-black bg-brand-gold/20 px-3 py-1 rounded-full border border-brand-gold/40">Sistem Keanggotaan</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black mt-3">
+          Tata Cara Menjadi Anggota IPHI
+        </h2>
+        <p class="text-gray-600 mt-3 text-sm sm:text-base">
+          Sesuai AD/ART IPHI Bab XII, setiap warga negara Indonesia yang beragama Islam dan telah menunaikan ibadah haji (maupun pra-haji) berhak menjadi bagian dari keluarga besar persaudaraan haji.
+        </p>
+      </div>
+
+      <!-- 4 STEPS FUNNEL -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- STEP 1 -->
+        <div class="bg-brand-surface rounded-2xl p-6 border border-gray-200 relative group hover:border-brand-gold transition">
+          <div class="w-10 h-10 rounded-full bg-brand-black text-brand-gold font-extrabold flex items-center justify-center text-sm mb-4">
+            01
+          </div>
+          <h3 class="text-base font-bold text-brand-black mb-2">Pilih Jalur Pendaftaran</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Daftar mudah melalui <strong>Apps Mabrur.club</strong> di smartphone Anda atau isi formulir online langsung pada website ini.
+          </p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="bg-brand-surface rounded-2xl p-6 border border-gray-200 relative group hover:border-brand-gold transition">
+          <div class="w-10 h-10 rounded-full bg-brand-black text-brand-gold font-extrabold flex items-center justify-center text-sm mb-4">
+            02
+          </div>
+          <h3 class="text-base font-bold text-brand-black mb-2">Lengkapi Data Diri</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Masukkan data NIK, nama lengkap, tahun ibadah haji / kloter embarkasi, alamat domisili, dan nomor kontak aktif.
+          </p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="bg-brand-surface rounded-2xl p-6 border border-gray-200 relative group hover:border-brand-gold transition">
+          <div class="w-10 h-10 rounded-full bg-brand-black text-brand-gold font-extrabold flex items-center justify-center text-sm mb-4">
+            03
+          </div>
+          <h3 class="text-base font-bold text-brand-black mb-2">Verifikasi Pengurus Daerah</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Permohonan diteliti dan disahkan oleh Pengurus Daerah (PD) IPHI setempat sesuai mekanisme organisasi.
+          </p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="bg-brand-surface rounded-2xl p-6 border border-gray-200 relative group hover:border-brand-gold transition">
+          <div class="w-10 h-10 rounded-full bg-brand-emerald text-white font-extrabold flex items-center justify-center text-sm mb-4">
+            <i data-lucide="check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-brand-black mb-2">Penerbitan KTA Resmi</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Anggota resmi menerima <strong>Kartu Tanda Anggota (KTA)</strong> ber-barcode nasional baik format digital di aplikasi maupun kartu fisik.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHTS & OBLIGATIONS SUMMARY -->
+      <div class="mt-12 bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 shadow-sm">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-brand-emerald mb-3 flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              Hak Setiap Anggota IPHI
+            </h4>
+            <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-gold font-bold">•</span>
+                <span>Hak bersuara dan berbicara dalam forum permusyawaratan organisasi.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-gold font-bold">•</span>
+                <span>Hak memilih dan dipilih dalam kepengurusan atau penugasan organisasi.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-gold font-bold">•</span>
+                <span>Mendapatkan pembelaan serta perlindungan nama baik dalam wadah organisasi.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-gold font-bold">•</span>
+                <span>Hak memperoleh penghargaan atas dedikasi pengabdian keumatan.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-sm font-extrabold uppercase tracking-wider text-brand-black mb-3 flex items-center gap-2">
+              <i data-lucide="shield" class="w-4 h-4 text-brand-gold"></i>
+              Kewajiban Anggota IPHI
+            </h4>
+            <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald font-bold">•</span>
+                <span>Menyetujui dan mewujudkan tujuan serta menyukseskan program IPHI.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald font-bold">•</span>
+                <span>Membayar uang pangkal dan iuran keanggotaan secara tertib.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald font-bold">•</span>
+                <span>Memelihara keluhuran nama baik organisasi dan kehormatan identitas haji.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-brand-emerald font-bold">•</span>
+                <span>Mengamalkan nilai-nilai kemabruran dalam kehidupan bermasyarakat.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center pt-6 border-t border-gray-100">
+          <a href="daftar.html" class="inline-flex items-center px-8 py-3.5 rounded-xl gold-gradient text-brand-black font-extrabold text-sm shadow-md hover:brightness-105 transition">
+            <i data-lucide="edit" class="w-4 h-4 mr-2"></i>
+            Buka Formulir Pendaftaran Anggota Sekarang
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-black text-white border-t-2 border-brand-gold/60 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
+        
+        <!-- COL 1: IDENTITY -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo-mabrur.webp" alt="Logo Mabrur" class="h-14 w-auto">
+            <div>
+              <span class="text-xs text-brand-gold uppercase tracking-wider font-bold">Platform Resmi</span>
+              <h3 class="text-lg font-extrabold text-white">MABRUR.CLUB x IPHI</h3>
+            </div>
+          </div>
+          <p class="text-gray-400 text-xs sm:text-sm leading-relaxed pr-6">
+            Amanat Pengurus Pusat Ikatan Persaudaraan Haji Indonesia (IPHI). Wadah berhimpun alumni haji Indonesia yang independen, berasaskan Pancasila, dan berakidah Islam demi melestarikan haji mabrur sepanjang hayat.
+          </p>
+          <div class="flex items-center space-x-2 text-xs text-brand-goldLight font-mono">
+            <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+            <span>AHU-0000881.AH.01.08.TAHUN 2021</span>
+          </div>
+        </div>
+
+        <!-- COL 2: QUICK LINKS -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white border-b border-gray-800 pb-2">Halaman Utama</h4>
+          <ul class="text-xs sm:text-sm text-gray-400 space-y-2">
+            <li><a href="profil.html" class="hover:text-brand-gold transition">Profil Lengkap IPHI</a></li>
+            <li><a href="legalitas.html" class="hover:text-brand-gold transition">Legalitas SK & Putusan MA</a></li>
+            <li><a href="struktur.html" class="hover:text-brand-gold transition">Susunan Pengurus Pusat</a></li>
+            <li><a href="#kegiatan" class="hover:text-brand-gold transition">Kegiatan Keumatan</a></li>
+            <li><a href="daftar.html" class="hover:text-brand-gold transition">Pendaftaran Anggota (KTA)</a></li>
+          </ul>
+        </div>
+
+        <!-- COL 3: SECRETARIAT CONTACT -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white border-b border-gray-800 pb-2">Sekretariat Pengurus Pusat</h4>
+          <p class="text-xs sm:text-sm text-gray-300 leading-relaxed flex items-start space-x-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold shrink-0 mt-1"></i>
+            <span>Gedung Persaudaraan Haji, Jl. Tegalan No. 1, Matraman, Jakarta Timur, DKI Jakarta 13140</span>
+          </p>
+          <p class="text-xs sm:text-sm text-gray-300 flex items-center space-x-2">
+            <i data-lucide="phone" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>Hotline / WA: 0858-8080-0000</span>
+          </p>
+          <p class="text-xs sm:text-sm text-gray-300 flex items-center space-x-2">
+            <i data-lucide="mail" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>Email: sekretariat@iphi.or.id</span>
+          </p>
+          <p class="text-xs sm:text-sm text-gray-300 flex items-center space-x-2">
+            <i data-lucide="globe" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>Website Resmi: iphi.or.id / mabrur.club</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+        <p>&copy; 2026 Ikatan Persaudaraan Haji Indonesia (IPHI) & Mabrur.club. Seluruh Hak Dilindungi.</p>
+        <p class="text-gray-400">Terdaftar Hak Cipta & Merek Kemenkumham RI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
